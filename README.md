@@ -10,6 +10,8 @@ A notifier plugin for Aurelia.
 npm install aurelia-plugins-notifier --save
 ```
 
+Add `node_modules/babel-polyfill/dist/polyfill.min.js` to the prepend list in `aurelia.json`. Do not forgot to add `babel-polyfill` to the dependencies in `package.json`.
+
 **JSPM**
 
 ```shell

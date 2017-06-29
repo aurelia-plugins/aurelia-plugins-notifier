@@ -1,6 +1,6 @@
 // IMPORTS
 import {CssAnimator} from 'aurelia-animator-css';
-import {inject} from 'aurelia-framework';
+import {inject} from 'aurelia-dependency-injection';
 
 import {Config} from './aurelia-plugins-notifier-config';
 
@@ -11,7 +11,11 @@ import {Config} from './aurelia-plugins-notifier-config';
 
 // PUBLIC CLASS
 export class NotifierService {
-  // PRIVATE PROPERTIES
+  // PRIVATE PROPERTIES (DI)
+  _config;
+  _cssAnimator;
+
+  // PRIVATE PROPERTIES (CUSTOM)
   _container = null;
   _notifications = [];
 

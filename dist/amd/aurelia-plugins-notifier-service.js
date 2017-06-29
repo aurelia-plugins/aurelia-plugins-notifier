@@ -1,4 +1,4 @@
-define(['exports', 'aurelia-animator-css', 'aurelia-framework', './aurelia-plugins-notifier-config'], function (exports, _aureliaAnimatorCss, _aureliaFramework, _aureliaPluginsNotifierConfig) {
+define(['exports', 'aurelia-animator-css', 'aurelia-dependency-injection', './aurelia-plugins-notifier-config'], function (exports, _aureliaAnimatorCss, _aureliaDependencyInjection, _aureliaPluginsNotifierConfig) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -49,7 +49,7 @@ define(['exports', 'aurelia-animator-css', 'aurelia-framework', './aurelia-plugi
 
   var _dec, _class;
 
-  var NotifierService = exports.NotifierService = (_dec = (0, _aureliaFramework.inject)(_aureliaPluginsNotifierConfig.Config, _aureliaAnimatorCss.CssAnimator), _dec(_class = function () {
+  var NotifierService = exports.NotifierService = (_dec = (0, _aureliaDependencyInjection.inject)(_aureliaPluginsNotifierConfig.Config, _aureliaAnimatorCss.CssAnimator), _dec(_class = function () {
     function NotifierService(config, cssAnimator) {
       _classCallCheck(this, NotifierService);
 

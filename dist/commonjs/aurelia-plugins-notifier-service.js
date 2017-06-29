@@ -11,7 +11,7 @@ var _dec, _class;
 
 var _aureliaAnimatorCss = require('aurelia-animator-css');
 
-var _aureliaFramework = require('aurelia-framework');
+var _aureliaDependencyInjection = require('aurelia-dependency-injection');
 
 var _aureliaPluginsNotifierConfig = require('./aurelia-plugins-notifier-config');
 
@@ -19,7 +19,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var NotifierService = exports.NotifierService = (_dec = (0, _aureliaFramework.inject)(_aureliaPluginsNotifierConfig.Config, _aureliaAnimatorCss.CssAnimator), _dec(_class = function () {
+var NotifierService = exports.NotifierService = (_dec = (0, _aureliaDependencyInjection.inject)(_aureliaPluginsNotifierConfig.Config, _aureliaAnimatorCss.CssAnimator), _dec(_class = function () {
   function NotifierService(config, cssAnimator) {
     _classCallCheck(this, NotifierService);
 

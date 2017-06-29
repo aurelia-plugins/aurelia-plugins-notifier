@@ -1,6 +1,6 @@
 'use strict';
 
-System.register(['aurelia-animator-css', 'aurelia-framework', './aurelia-plugins-notifier-config'], function (_export, _context) {
+System.register(['aurelia-animator-css', 'aurelia-dependency-injection', './aurelia-plugins-notifier-config'], function (_export, _context) {
   "use strict";
 
   var CssAnimator, inject, Config, _typeof, _dec, _class, NotifierService;
@@ -43,8 +43,8 @@ System.register(['aurelia-animator-css', 'aurelia-framework', './aurelia-plugins
   return {
     setters: [function (_aureliaAnimatorCss) {
       CssAnimator = _aureliaAnimatorCss.CssAnimator;
-    }, function (_aureliaFramework) {
-      inject = _aureliaFramework.inject;
+    }, function (_aureliaDependencyInjection) {
+      inject = _aureliaDependencyInjection.inject;
     }, function (_aureliaPluginsNotifierConfig) {
       Config = _aureliaPluginsNotifierConfig.Config;
     }],

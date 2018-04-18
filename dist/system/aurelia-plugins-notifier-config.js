@@ -25,8 +25,17 @@ System.register([], function (_export, _context) {
           return this._config;
         };
 
+        Config.prototype.get = function get(key) {
+          return this._config[key];
+        };
+
         Config.prototype.options = function options(obj) {
           Object.assign(this._config, obj);
+        };
+
+        Config.prototype.set = function set(key, value) {
+          this._config[key] = value;
+          return this._config[key];
         };
 
         return Config;

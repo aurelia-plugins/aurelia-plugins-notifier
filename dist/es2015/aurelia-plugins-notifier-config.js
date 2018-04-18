@@ -8,7 +8,16 @@ export let Config = class Config {
     return this._config;
   }
 
+  get(key) {
+    return this._config[key];
+  }
+
   options(obj) {
     Object.assign(this._config, obj);
+  }
+
+  set(key, value) {
+    this._config[key] = value;
+    return this._config[key];
   }
 };

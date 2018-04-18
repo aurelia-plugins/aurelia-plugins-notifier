@@ -1,6 +1,6 @@
 {
   "name": "aurelia-plugins-notifier",
-  "version": "2.5.2",
+  "version": "2.6.0",
   "description": "A notifier plugin for Aurelia.",
   "keywords": [
     "aurelia",
@@ -11,7 +11,7 @@
   "homepage": "https://github.com/aurelia-plugins/aurelia-plugins-notifier",
   "license": "MIT",
   "authors": [
-    "Bart Lenaerts <bart@codious.io> (http://codious.io/)"
+    "Bart Lenaerts <bart@codious.io> (https://codious.io/)"
   ],
   "moduleType": "node",
   "main": "dist/commonjs/aurelia-plugins-notifier.js",
@@ -20,7 +20,7 @@
     "url": "git://github.com/aurelia-plugins/aurelia-plugins-notifier.git"
   },
   "dependencies": {
-    "aurelia-animator-css": "1.0.2",
-    "aurelia-dependency-injection": "1.3.1"
+    "aurelia-animator-css": "^1.0.4",
+    "aurelia-dependency-injection": "^1.3.2"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "aurelia-plugins-notifier",
-  "version": "2.5.2",
+  "version": "2.6.0",
   "description": "A notifier plugin for Aurelia.",
   "keywords": [
     "aurelia",
@@ -10,7 +10,7 @@
   ],
   "homepage": "https://github.com/aurelia-plugins/aurelia-plugins-notifier",
   "license": "MIT",
-  "author": "Bart Lenaerts <bart@codious.io> (http://codious.io/)",
+  "author": "Bart Lenaerts <bart@codious.io> (https://codious.io/)",
   "bugs": {
     "url": "https://github.com/aurelia-plugins/aurelia-plugins-notifier/issues"
   },
@@ -20,23 +20,24 @@
     "url": "git://github.com/aurelia-plugins/aurelia-plugins-notifier.git"
   },
   "dependencies": {
-    "aurelia-animator-css": "1.0.2",
-    "aurelia-dependency-injection": "1.3.1"
+    "aurelia-animator-css": "^1.0.4",
+    "aurelia-dependency-injection": "^1.3.2"
   },
   "devDependencies": {
+    "babel-core": "6.26.0",
     "babel-plugin-transform-decorators-legacy": "1.3.4",
     "babel-plugin-transform-es2015-modules-amd": "6.24.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
     "babel-plugin-transform-es2015-modules-systemjs": "6.24.1",
-    "babel-preset-es2015": "6.24.1",
+    "babel-preset-env": "1.6.1",
     "babel-preset-stage-1": "6.24.1",
-    "del": "2.2.2",
+    "del": "3.0.0",
     "gulp": "3.9.1",
-    "gulp-babel": "6.1.2",
+    "gulp-babel": "7.0.1",
     "gulp-rename": "1.2.2",
-    "gulp-typescript": "3.1.7",
-    "run-sequence": "1.2.2",
-    "typescript": "2.4.1"
+    "gulp-typescript": "4.0.2",
+    "run-sequence": "2.2.1",
+    "typescript": "2.8.1"
   },
   "scripts": {
     "build": "gulp",
@@ -50,8 +51,13 @@
       "dist": "dist/amd"
     },
     "dependencies": {
-      "aurelia-animator-css": "1.0.2",
-      "aurelia-dependency-injection": "1.3.1"
+      "aurelia-animator-css": "^1.0.4",
+      "aurelia-dependency-injection": "^1.3.2"
+    },
+    "devDependencies": {
+      "babel": "babel-core@^5.8.24",
+      "babel-runtime": "^5.8.24",
+      "core-js": "^1.1.4"
     }
   }
 }

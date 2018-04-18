@@ -10,7 +10,7 @@ A notifier plugin for Aurelia.
 npm install aurelia-plugins-notifier --save
 ```
 
-When using Aurelia CLI add the following dependency to `aurelia.json`:
+When using Aurelia CLI add the following dependency to `aurelia.json` as described in the [documentation](http://aurelia.io/docs/build-systems/aurelia-cli#adding-client-libraries-to-your-project):
 
 ```json
 {
@@ -41,13 +41,15 @@ bower install aurelia-plugins-notifier
 Inside of your `main.js` or `main.ts` file simply load the plugin inside of the configure method using `.plugin()`.
 
 ```javascript
+import {PLATFORM} from 'aurelia-framework';
+
 export async function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging();
 
   aurelia.use
-    .plugin('aurelia-plugins-notifier', config => {
+    .plugin(PLATFORM.moduleName('aurelia-plugins-notifier'), config => {
       config.options({
         insert: true|false, // whether or not to insert new notifications as a stack or replace the latest one, default is true
         position: 'bottom-left'|'bottom-right'|'top-left'|'top-right', // the position on the page where to show the notifications, default is 'top-right'
